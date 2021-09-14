@@ -12,7 +12,7 @@ api_secret= ""
 client = Client(api_key, api_secret)
 
 # path for data output
-data_path = Path("../data/")
+data_path = Path("./data")
 
 
 
@@ -38,7 +38,7 @@ def download_data(symbol, interval=Client.KLINE_INTERVAL_1MINUTE):
 
     int_path = data_path/interval
     if not int_path.exists():
-        Path.mkdir(int_path)
+        Path.mkdir(int_path, parents=True)
 
     klines_df.to_csv(int_path / f"{symbol}_{interval}_klines.csv")
 
