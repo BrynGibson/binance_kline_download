@@ -1,4 +1,4 @@
-# binance_kline_download
+# binance OHLC download
  This repo contains a script for downloading Binance Kline data using Binance API.
  
  Add in your own API key.
