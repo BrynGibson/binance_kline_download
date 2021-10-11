@@ -6,8 +6,8 @@ from multiprocessing import Pool
 from datetime import datetime
 
 # binance api key
-api_key= ""
-api_secret= ""
+api_key= "asdfasdf"
+api_secret= "asdfasdf"
 
 client = Client(api_key, api_secret)
 
